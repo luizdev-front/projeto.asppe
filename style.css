@@ -13,11 +13,6 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
 section {
   padding: 20px;
   margin: 20px;
@@ -31,9 +26,68 @@ h2 {
   margin-bottom: 10px;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.garrafas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.garrafa {
+  width: 60px;
+  height: 180px;
+  border-radius: 20px 20px 5px 5px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.adulterada {
+  background: #ffebee;
+  border: 3px solid #d32f2f;
+}
+
+.segura {
+  background: #e8f5e9;
+  border: 3px solid #388e3c;
+}
+
+.rotulo {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.scanner {
+  font-size: 2em;
+  color: #616161;
+  animation: bip 1s infinite;
+}
+
+@keyframes bip {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+.legenda {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.qrcode {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 footer {
@@ -41,32 +95,4 @@ footer {
   padding: 15px;
   background: #eee;
   font-size: 0.9em;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  flex: 1 1 300px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-.adulterada {
-  background: #ffebee;
-  border-left: 6px solid #d32f2f;
-}
-
-.segura {
-  background: #e8f5e9;
-  border-left: 6px solid #388e3c;
-}
-
-.card h3 {
-  margin-top: 0;
 }
