@@ -89,7 +89,16 @@ h2 {
   justify-content: center;
   margin-top: 20px;
 }
+.imagem-fiscalizacao {
+  text-align: center;
+  margin: 30px 20px;
+}
 
+.imagem-fiscalizacao .legenda {
+  font-style: italic;
+  margin-top: 10px;
+  color: #555;
+}
 footer {
   text-align: center;
   padding: 15px;
